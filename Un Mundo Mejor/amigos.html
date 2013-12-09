@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Amigos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+	<!--script src="js/less-1.3.3.min.js"></script-->
+	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="img/favicon.png">
+  
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+	<script type="text/javascript" src="js/jquery.lavalamp.js"></script>
+	<script type="text/javascript">
+$(function() {
+    $.easing.easeOutBack = function (x, t, b, c, d, s) {
+        if (s === undefined) s = 1.70158;
+        return c*((t=t/d-1)*t*((s+1)*t + s) + 1) + b;
+    };
+
+    $('.lavalamp-full').lavalamp({
+        blur: function() {
+            $(this).addClass('blur');
+        },
+        focus: function() {
+            $(this).removeClass('blur');
+        },
+        animation: Modernizr.testAllProps('transition') ? 0 : {duration: 500, easing: 'easeOutBack'}
+    });
+});
+
+</script>
+</head>
+
+<body>
+<div class="container-liquid">
+	<div class="row clearfix header">
+		<div id="titol" class="col-md-12 column">
+			<h3 style="
+	font-size:12em;">
+			
+				<br>
+			</h3>
+		</div>
+	</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-2 column">
+		</div>
+		<div class="col-md-8 column">
+			<h3 class="text-info">
+				<div class="hidden-xs" style="width:100%">
+					<ul class="lavalamp-full center-block">
+		            <li ><a href="perfil.html">Perfil</a></li>
+		            <li class="current"><a href="#">Amigos</a></li>
+		            <li><a href="ranking.html">Ranking</a></li>
+      			  	</ul>
+      			</div>
+			</h3>
+			<div class="list-group visible-xs">
+  <a href="perfil.html" class="list-group-item">Perfil</a>
+  <a href="#" class="list-group-item">Amigos</a>
+  <a href="ranking.html" class="list-group-item">Ranking</a>
+</div>
+		</div>
+		<div class="col-md-2 column">
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-2 column">
+		</div>
+		<div class="col-md-7 column">
+			</div>
+		<div class="col-md-1 column">
+		<input type="button" class="btn btn-default center-block" value="Salir" onClick="window.location = 'index.html';"> 
+		</div>
+		<div class="col-md-2 column">
+		</div>
+	</div>
+		<div class="row clearfix">
+		<div class="col-md-2 column">
+		</div>
+		<div class="col-md-8 column  pepe">
+			<div class="row clearfix">
+				<div class="col-md-3 column">
+				<div class="recuadroblanco " style="text-align:center;">
+					Laura Gonzalez
+				</div>
+					<div class="row clearfix">
+
+				<div class="col-md-6 column">
+
+					<img alt="foto de perfil" src="img/perfil/lau.jpg" class =" muroimg reflejo" >
+				</div>
+				<div class="col-md-1 column">
+				</div>
+				<div class="col-md-5 column">
+					<img  alt="Nivel" src="img/niveles/nivel9.png" class="niveles"> <span class="label label-default">Nivel:</span>  9
+				</div>
+
+			</div>
+					<div class="progress progress-striped active">
+						  <div class="progress-bar " role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%">
+						  </div>
+					</div>
+				</div>
+				<div class="col-md-1 column">
+				</div>
+				<div class="col-md-8 column ">
+					<div class="recuadroblanco">
+					<img class="badges" title="Has salvado 37 PeZqueñines en el artico" src="img/badges/flounder.png">
+					<img class="badges" title="Has ahorrado 250 litros al tirar de la cadena" src="img/badges/kitty.png">
+					<img class="badges" title="Has realizado 25 buenas acciones" src="img/badges/novato.png">
+					<img class="badges" title="Has animado a 10 niños en una semana" src="img/badges/david.png">
+
+					</div>
+
+					<div class="recuadroblanco">
+					<input type="button" class="btn btn-default center-block" value="Visitar Perfil" onClick="window.location = 'perfillau.html';">
+					
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2 column">
+		</div>
+	</div>
+
+<div class="row clearfix">
+		<div class="col-md-2 column">
+		</div>
+		<div class="col-md-8 column  pepe">
+			<div class="row clearfix">
+				<div class="col-md-3 column">
+				<div class="recuadroblanco " style="text-align:center;">
+					Natascha Knack-Zeribi 
+				</div>
+					<div class="row clearfix">
+
+				<div class="col-md-6 column">
+
+					<img alt="foto de perfil" src="img/perfil/natascha.jpg" class =" muroimg  reflejo" >
+				</div>
+				<div class="col-md-1 column">
+				</div>
+				<div class="col-md-5 column">
+					<img  alt="Nivel" src="img/niveles/nivel6.png" class="niveles"> <span class="label label-default">Nivel:</span>  6
+				</div>
+
+			</div>
+					<div class="progress progress-striped active">
+						  <div class="progress-bar " role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 87%">
+						  </div>
+					</div>
+				</div>
+				<div class="col-md-1 column">
+				</div>
+				<div class="col-md-8 column ">
+					<div class="recuadroblanco">
+					<img class="badges" title="Has ahorrado 250 litros al tirar de la cadena" src="img/badges/kitty.png">
+					<img class="badges" title="Has salvado inumerables animalitos" src="img/badges/noe.png">
+					<img class="badges" title="Has realizado 25 buenas acciones" src="img/badges/novato.png">
+					<img class="badges" title="Has curado 30 personas" src="img/badges/drnick.png">
+					</div>
+
+					<div class="recuadroblanco">
+					<input type="button" class="btn btn-default center-block" value="Visitar Perfil" onClick="window.location = 'perfilnat.html';">
+					
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2 column">
+		</div>
+	</div>
+
+
+
+<div class="row clearfix">
+		<div class="col-md-2 column">
+		</div>
+		<div class="col-md-8 column  pepe">
+			<div class="row clearfix">
+				<div class="col-md-3 column">
+					
+				<div class="recuadroblanco " style="text-align:center;">
+					Mareni Solala 
+				</div>
+
+					<div class="row clearfix">
+				<div class="col-md-6 column">
+					<img alt="foto de perfil" src="img/perfil/mareni.jpg" class =" muroimg reflejo" >
+				</div>
+				<div class="col-md-1 column">
+				</div>
+				<div class="col-md-5 column">
+					<img  alt="Nivel" src="img/niveles/nivel3.png" class="niveles"> <span class="label label-default">Nivel:</span>  3
+				</div>
+
+			</div>
+					<div class="progress progress-striped active">
+						  <div class="progress-bar " role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style="width: 23%">
+						  </div>
+					</div>
+				</div>
+				<div class="col-md-1 column">
+				</div>
+				<div class="col-md-8 column ">
+					<div class="recuadroblanco">
+					<img class="badges" title="Has salvado 37 PeZqueñines en el artico" src="img/badges/flounder.png">
+					<img class="badges" title="Has salvado inumerables animalitos" src="img/badges/noe.png">
+					<img class="badges" title="Has realizado 25 buenas acciones" src="img/badges/novato.png">
+					<img class="badges" title="Has plantado 13 arbolitos" src="img/badges/chopo.png">
+
+					</div>
+
+					<div class="recuadroblanco">
+					<input type="button" class="btn btn-default center-block" value="Visitar Perfil" onClick="window.location = 'perfilmareni.html';">
+					
+					</div><br>
+					
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2 column">
+		</div>
+	</div>
+
+	<div class="row clearfix footer">
+		<div class="col-md-12 column">
+			<h3>
+				Un Mundo Mejor © 2013 · Dani García Sastre
+			</h3>
+		</div>
+	</div>
+</div>
+</body>
+</html>
